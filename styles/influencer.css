@@ -27,7 +27,7 @@
 }
 
 .fa-arrow-right {
-  padding: 10px 18px 10px 12px;
+  padding: 10px 18px 10px 5px;
 }
 
 h3 {
@@ -115,7 +115,6 @@ h3 {
 /* collections style */
 .collection-container {
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .title {
@@ -123,11 +122,10 @@ h3 {
 }
 
 .collected-items {
-  max-width: 1300px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 50px;
 }
 .card {
   border-radius: 5px;
@@ -151,8 +149,10 @@ h3 {
   padding: 0;
 }
 .item-rating {
+  color: gold;
+  font-size: 1.5rem;
+  margin: 15px 0;
 }
-
 
 .item-desc {
   max-width: 196px;
@@ -161,6 +161,17 @@ h3 {
   font-weight: 700;
   color: rgb(120, 120, 133);
   margin: 0;
+}
+
+.see-more{
+  max-width: 1090px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: rgba(224, 44, 109, 0.87)
 }
 
 /* Media query css */
@@ -199,10 +210,13 @@ h3 {
   .sponsors {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-items: center;
   }
 
   .collected-items {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .see-more {
+    margin-right: 15px;
   }
 }
