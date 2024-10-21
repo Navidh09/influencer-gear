@@ -179,6 +179,7 @@ h3 {
 .featured-product {
   align-items: center;
   justify-content: center;
+  margin-top: 70px;
 }
 .featured-image img {
 max-width: 404px;
